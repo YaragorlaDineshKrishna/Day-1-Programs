@@ -1,6 +1,6 @@
 def printParenthesis(str, n):
 	if n > 0:
-		_printParenthesis(str, 0, n, 0, 0)
+		printParenthesis(str, 0, n, 0, 0)
 	return
 def _printParenthesis(str, pos, n, open, close):
 	if close == n:
@@ -19,4 +19,5 @@ def _printParenthesis(str, pos, n, open, close):
 
 n =int(input("Enter the number of rows needed:"))
 string = [""] * 2 * n
-printParenthesis(string, n
+printParenthesis(string, n)
+
